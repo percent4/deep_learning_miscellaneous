@@ -6,7 +6,7 @@
 import math
 import torch as T
 from sklearn.metrics import log_loss
-from torch.nn import MSELoss, L1Loss, BCELoss, CrossEntropyLoss, NLLLoss, Softmax
+from torch.nn import MSELoss, L1Loss, BCELoss, CrossEntropyLoss, NLLLoss, Softmax, KLDivLoss
 
 # mse
 y_true = T.tensor([[10.0], [7.0]])
@@ -65,3 +65,8 @@ y_pred = T.tensor([[0.7, 0.3], [0.4, 0.6]])
 loss = MyHingeLoss()(y_pred, y_true)
 print("hinge loss: ", loss)
 
+# KL divergece
+y_true = T.tensor([[0.1, 0.4, 0.5]])
+y_pred = T.tensor([[0.4, 0.2, 0.4]])
+loss = KLDivLoss()(y_pred, y_true)
+print('KL loss: ', loss)
