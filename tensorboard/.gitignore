@@ -1,0 +1,4 @@
+MNIST
+run
+*.onnx
+.ipynb_checkpoints

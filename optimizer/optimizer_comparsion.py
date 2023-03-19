@@ -3,7 +3,7 @@
 # @Author : Jclian91
 # @File : optimizer_comparsion.py
 # @Place : Minghang, Shanghai
-# comparison in Five optimizers in PyTorch: SGD, Momentum, AdaGrad, RMSProp, Adam
+# comparison in Five optimizers in PyTorch: SGD, AdaGrad, RMSProp, Adam
 import matplotlib.pyplot as plt
 import torch
 import torch.nn
